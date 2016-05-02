@@ -1,0 +1,23 @@
+1)for login:
+localhost:8081/bloodapp/user/login
+the above url takes post method and json parameter
+{"password":"adam",
+ "email":"adam@gmail.com"
+ }
+2)To display list of users
+localhost:8081/bloodapp/user/getAllusers
+the above url takes get method
+3)to save or insert new user
+localhost:8081/bloodapp/user/saveuser
+
+{
+"id": 1,
+"name": null,
+"password": "negtative",
+"email": "ravi@gamil.com",
+"contactnumber": null,
+"bloodgroup": null,
+"longitude": 0,
+"latitude": 0,
+"sex": null
+}

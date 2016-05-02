@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#304E4AA7"
+    android:scaleType = "centerCrop"
+    android:layout_weight="6">
+    <TextView
+        android:id="@+id/status"
+        android:textSize="20dp"
+        android:textColor="#2494f2"
+
+        android:layout_width="200dp
+        "
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true" />
+
+    <!--android:background="#FFF"-->
+
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_weight="0"
+        android:layout_marginBottom="99dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+
+
+
+        <TableRow android:layout_marginTop="20dip" >
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+
+                android:textIsSelectable="false"
+                android:inputType="textAutoComplete"
+
+                android:hint="Email"
+                android:background="#FFFF"
+                android:layout_marginBottom="31dp"
+                android:layout_above="@+id/password"
+               android:layout_weight="1"
+                android:minHeight="36dp" />
+
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dip" >
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textAutoComplete|textPassword"
+                android:hint="Password"
+                android:background="#FFFF"
+                android:layout_above="@+id/login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:minHeight="36dp"
+                android:layout_weight="1">
+
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+
+        <TableRow android:gravity="center" android:layout_marginTop="20dip" >
+
+
+            <Button
+                android:text="Login"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/login"
+                android:layout_span="2"
+                android:textColor="#FFF"
+                android:background="#2494f2"
+                android:minWidth="300dp"
+                android:layout_weight="0"></Button>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
+
+
+<!--
+<Button
+android:id="@+id/login"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Login"
+android:textColor="#FFF"
+android:layout_marginBottom="45dp"
+android:maxWidth="300dp"
+android:minWidth="220dp"
+android:background="#2494f2"
+android:minHeight="36dp"
+android:layout_alignParentBottom="true"
+android:layout_alignLeft="@+id/password"
+    />
+
+<EditText
+android:id="@+id/password"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:ems="10"
+android:inputType="textAutoComplete|textPassword"
+android:hint="Password"
+android:background="#FFFF"
+android:layout_above="@+id/login"
+android:layout_centerHorizontal="true"
+android:layout_marginBottom="20dp"
+android:minHeight="36dp">
+
+<requestFocus />
+</EditText>
+
+
+
+<EditText
+android:id="@+id/username"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:ems="10"
+
+android:textIsSelectable="false"
+android:inputType="textAutoComplete"
+
+android:hint="Email"
+android:background="#FFFF"
+android:layout_marginBottom="31dp"
+android:layout_above="@+id/password"
+android:layout_alignStart="@+id/password"
+android:minHeight="36dp" />
+-->
+<!-- From: file:/C:/Users/lenovo/Desktop/JSONParsingTutorial/app/src/main/res/layout/dummy.xml -->

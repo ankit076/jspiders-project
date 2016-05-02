@@ -1,0 +1,86 @@
+1)for login
+http://localhost:8081/temple/user/login
+the above url takes post method and json parameter
+{"password":"adam",
+ "email":"adam@gmail.com"
+ }
+2)To display list of users
+localhost:8081/temple/user/getAllusers
+the above url takes get method
+3)to save or insert new user
+localhost:8081/temple/user/saveuser
+
+{
+"name": "admin",
+"password": "admin",
+"email": "admin@gmail.com",
+"contactnumber": "223243",
+"sex": "male"
+}
+
+4)to save or insert new temple details
+localhost:8081/temple/temple/savetemple
+
+{
+
+"name": "Gokarna",
+"address": "bangalore",
+"longitude": 0,
+"latitude": 0,
+"contactnumber": "3231412"
+}
+
+------------------for temple-----------------
+5)for temple to display list of temple
+localhost:8081/temple/temple/getAllTemples
+{
+"id": 1,
+"name": "Gokarna",
+"address": "bangalore",
+"longitude": 0,
+"latitude": 0,
+"contactnumber": "3231412"
+}
+
+6)to fetch or to get single temple information 
+localhost:8081/temple/temple/gettemplebyid/2
+
+
+
+-----------for seva------------
+to list of seva
+7)localhost:8081/temple/seva/getAllSevas
+
+8)to save seva details
+localhost:8081/temple/seva/saveseva
+
+{"name": "ereeeerrrrr",
+"sevadate": "2016-05-03",
+"temple":{
+  "id":2
+}
+
+---------for event----------------
+
+9)to list of event
+localhost:8081/temple/event/getAllEvents
+
+
+{
+"id": 1,
+"name": "b",
+"eventdate": "2016-05-18",
+"temple":{"id": 1}
+}
+}
+
+10)
+localhost:8081/temple/event/saveEvent
+
+
+{
+
+"name": "ywerqrrrerr",
+"eventdate": "2016-05-18",
+  "temple":{"id": 1}
+}
